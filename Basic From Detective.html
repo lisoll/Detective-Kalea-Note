@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detective Kalea Notes</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --text: #f8fafc;
+      --muted: #94a3b8;
+      --border: #334155;
+      --accent: #3b82f6;
+      --accent-hover: #2563eb;
+      --radius: 12px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      display: flex;
+      justify-content: center;
+      padding: 2rem 1rem;
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 800px;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    header {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.5rem 2rem;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      color: var(--muted);
+      font-size: 0.95rem;
+      font-style: italic;
+    }
+
+    section {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.5rem 2rem;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    }
+
+    section h2 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--accent);
+      margin-bottom: 1rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.5rem;
+    }
+
+    section h3 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: #fff;
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      margin-bottom: 0.75rem;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    li {
+      padding: 0.35rem 0;
+      border-bottom: 1px dashed rgba(255, 255, 255, 0.05);
+      font-size: 0.95rem;
+    }
+
+    li:last-child {
+      border-bottom: none;
+    }
+
+    .quote-box {
+      background: rgba(59, 130, 246, 0.1);
+      border-left: 4px solid var(--accent);
+      padding: 1rem 1.25rem;
+      border-radius: 0 var(--radius) var(--radius) 0;
+      font-style: italic;
+      color: #e2e8f0;
+      margin-top: 0.5rem;
+    }
+
+   
+    img {
+      max-width: 100%;      
+      height: auto;          
+      display: block;        
+      margin-top: 1rem;     
+      border-radius: 8px; 
+      border: 1px solid var(--border); 
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.85rem;
+      padding: 1rem 0;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 1rem 0.5rem;
+      }
+      header, section {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>Detective Kalea — Field Notes</h1>
+      <p>“If you can't do the time, don't do the crime.” — Field Notes & Operational Detectives</p>
+    </header>
+
+    <section>
+      <h2>Miranda Rights for Interrogation by Detective Kalea</h2>
+      <p>When about to interrogate a suspect, the officer must introduce themselves and ask for the suspect's name, then the suspect must be read their Miranda Rights to ensure the legality of the detention and protect their constitutional right:</p>
+      <div class="quote-box">
+        <p><b>English</b></p>
+        <em>"You have the right to remain silent or to speak. Anything you do not say or say can and will be used against you in court. You have the right to have an attorney. If you don't have an attorney, one will be provided for you."</em>
+        <br><br>
+        <p><b>Indonesia</b></p> 
+        <em>"Kamu punya hak untuk tetap diam atau berbicara. Apa pun yang tidak kamu katakan atau katakan bisa dan akan digunakan melawanmu di pengadilan. Kamu punya hak untuk memiliki pengacara. Jika kamu tidak punya pengacara, satu akan disediakan untukmu."</em>
+      </div>
+    </section>
+
+    <section>
+      <h2>Court Verdict</h2>
+      <div>
+        <p>Apa perbedaan <b>Drug Manufacturing</b> dan <b>Drug Paraphernalia B</b>?</p>
+        <p><b>Drug Manufacturing</b></p>
+        <div class="quote-box">
+          <p>- Jika dia membawa beberapa peralatan untuk membuat Drugs dan dia mengakui dia melakukan produksi Drugs, bisa langsung dikenakan Drug Manufacturing tapi harus disertai dengan BodyCam Interrogation</p>
+          <p>- Jika dia membawa beberapa peralatan untuk membuat Drugs dan dia tidak mengakui bahwa dia juga melakukan produksi namun ada barang lain seperti Baggy atau Narco mentah itu bisa dikenakan ke Drug Manufacturing</p>
+        </div>
+        <br>
+        <p><b>Drug Paraphernalia B</b></p>
+        <div class="quote-box">
+          <p>Drug Paraphernalia B bisa dikenakan apabila Suspect membawa barang untuk membuat Drugs (jumlah barang diatas 10 dan 2 barang)</p>
+          <p>Contoh : Plain Pot dan 11 Cannabis Seed / Poppy Seed, 11 Plain Pot dan 5 Cannabis Seed / Poppy Seed, Bagging Table dan 11 Cannabis Seed / Poppy Seed</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Evidence</h2>
+      <p><b>Cara mengambil Foto Evidence yang baik dan benar</b></p>
+      <div class="quote-box"> 
+        <p><b>Benar:</b></p>
+      <p>Muka Suspect ada ditengah, foto ke arah KTP saat mengecek kantong, dan semua barang illegal boleh ditaruh diatas beserta dengan KTP (jika semua barang illegal tidak ditaruh diatas wajib foto semua isi kantong nya)</p>
+      <p><b>Noted:</b> Jika Suspect yang tertangkap adalah Suspect dari Case Money Laundering <b>WAJIB</b> foto <b>UANG MERAH</b> dan <b>UANG PUTIH</b> nya juga</p>
+      <img src="https://i.postimg.cc/SsP1YsJ0/Five-M-b3258-GTAProcess-Yu-Qy-Yvku-Fe.jpg" alt="Evidence Photo 1"> 
+      <img src="https://i.postimg.cc/9fMvDsJk/Five-M-b3258-GTAProcess-FZ8OU2YHf-T.png" alt="Evidence Photo 2">
+      </div>
+      
+      <div class="quote-box">
+      <p><b>Salah :</b></p>
+      <p>Muka Suspect membelakangi, masih memakai masker, dan masih memakai aksesoris</p>
+      <img src="https://i.postimg.cc/7P2nND6S/Five-M-b3258-GTAProcess-p1lr-Xfil-FI.jpg" alt="Evidence Photo 3">
+      <img src="https://i.postimg.cc/QMvWB9cw/Five-M-b3258-GTAProcess-UPvq-G5su-Mi.jpg" alt="Evidence Photo 4">
+      <img src="https://i.postimg.cc/QtpVH68p/Five-M-b3258-GTAProcess-q-RPj-Rb-S7Ak.jpg" alt="Evidence Photo 5">
+      </div>
+    </section>
+
+    <section>
+      <h2><b>Flow Chart</b></h2>
+      <div class="quote-box">
+        <img src="https://i.postimg.cc/5ys4CTZy/Flowchart-Court-Verdict.png" alt="Evidence Photo 6">
+      </div>
+    </section>
+
+    <footer>
+      Detective Kalea Clayton Osvald • Commander of Major Crimes Division
+    </footer>
+  </div>
+
+</body>
+</html>
